@@ -8,6 +8,13 @@
 
 h1 { /*H1 es el título principal*/
   text-align: center; /*Text align centra el texto*/
+  background-color:rgb(24, 75, 245);
+  
+}
+h2 {
+    background-color: #45a049;
+    border: 1px solid #ccc;
+  
 }
 
 form { /*Form es el formulario*/
