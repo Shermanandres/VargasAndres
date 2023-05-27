@@ -1,8 +1,10 @@
 // Clase Usuario
 class UsuarioFacebook {
-  constructor(usuario,contraseña) { //<TAREA - agregar con una coma contraseña> (usuario, contraseña)  
+  constructor(usuario, contraseña ) {  
     this.usuario = usuario; //ejemplo de que a la clase UsuarioFacebook se le agrega un atributo usuario
     //TAREA - agregar contraseña
+    this.contraseña = contraseña;
+
   }
 }
 
@@ -12,8 +14,8 @@ class UsuarioFacebook {
 var users = [
   new UsuarioFacebook("usuario1", "contraseña1"),
   new UsuarioFacebook("usuario2", "contraseña2"),
-  new UsuarioFacebook("shermanvargas", "123456"),   
-  //TAREA - Agregar Nuevo usuarios con usuario: juan y contraseña: 123
+  new UsuarioFacebook("shermanvargas", "12345"),
+  
 ]; 
 
 
@@ -21,6 +23,8 @@ var users = [
 // Función para saber si el usuario existe
 function validarCredenciales() {
   var username = document.getElementById("email").value; //obtener el valor del input con id="email"
+  var contraseña = document.getElementById("contraseña").value;
+  
   //TAREA - Agregar el valor del input con id="contraseña" a una variable llamada contraseña
 
   //una variable con valor false
@@ -28,7 +32,7 @@ function validarCredenciales() {
 
   // Buscar el usuario en el JSON logica que veremos 
   for (var i = 0; i < users.length; i++) {
-    if (users[i].usuario == username ) { //TAREA - && users[i].contraseña === contraseña) {
+    if (users[i].usuario == username && users[i].contraseña === contraseña) {//TAREA - 
       usuarioValido = true;
     }
   }
@@ -43,6 +47,9 @@ function alertaCredeciales(event) {
   
   if (validarCredenciales() == true) { //si la funcion validarCredenciales es true
     alert("¡Inicio de sesión exitoso!");
+  }
+  if (validarCredenciales() == false) { //si la funcion validarCredenciales es true
+    alert("¡Inicio de sesión fallido!");
   }
 
   // TAREA - agregar if en caso de false
