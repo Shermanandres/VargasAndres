@@ -1,20 +1,18 @@
 .container { /*Container es el contenedor principal*/
   max-width: 400px; /*Max width traduce el ancho máximo que puede tener el contenedor*/
   margin: 0 auto; /*Margin 0 auto centra el contenedor*/
-  padding: 20px; /*Padding es el espacio que hay entre el borde y el contenido*/
-  border: 1px solid #ccc; /*Border es el borde del contenedor*/
-  border-radius: 5px; /*Border radius es el radio de las esquinas del contenedor*/
+  padding: 10px; /*Padding es el espacio que hay entre el borde y el contenido*/
+  border: 1px solid #cccccc; /*Border es el borde del contenedor*/
+  border-radius: 10px; /*Border radius es el radio de las esquinas del contenedor*/
 }
 
-h1 { /*H1 es el título principal*/
+#hola { /*H1 es el título principal*/
   text-align: center; /*Text align centra el texto*/
-  background-color:rgb(24, 75, 245);
+  color: rgb(0, 132, 255);
   
 }
-h2 {
-    background-color: #45a049;
-    border: 1px solid #ccc;
-  
+#hola2 {
+  color: blue;
 }
 
 form { /*Form es el formulario*/
@@ -46,5 +44,11 @@ input[type="submit"] { /*Input type es el tipo de input que se va a utilizar*/
 }
 
 input[type="submit"]:hover { /*Input hover es el input cuando el cursor está encima*/
-  background-color: #45a049;
+  background-color: #d61616;
+}
+#login-button{
+  background-color: rgb(20, 52, 235);
+}
+#in-butto2n{
+  background-color: green; 
 }
